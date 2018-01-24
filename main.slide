@@ -1,0 +1,55 @@
+Gojek X Gophers SG
+19:40 22 Jan 2018
+
+GJ
+Data Science, Gojek
+go-jun@go-jek.com
+
+* Agenda
+- Introduction to Go-Jek
+- Tensorflow Serving in Go
+
+* Introduction to Go-Jek
+- What do we do
+.image images/go-jek-home.jpg _ 280
+
+* Introduction to Go-Jek
+- Company Profile Video
+.video videos/gojek_profile.mp4 video/mp4 _ 900
+
+* Tensorflow
+- What is tensorflow
+- Deploying a trained tensorflow model
+- A simple example
+
+* What is tensorflow
+Open source library for numerical computation using data flow graphs, written in C++.
+Nodes represent mathematical operations, while graph edges represent multidimensional data arrays (tensors) communicated between them.
+
+	Simple linear model:
+	W = tf.Variable([.3], dtype=tf.float32)
+	b = tf.Variable([-.3], dtype=tf.float32)
+	x = tf.placeholder(tf.float32)
+	linear_model = W*x + b
+
+More information:
+.link https://www.tensorflow.org/get_started/get_started 
+
+* Deploying a trained tensorflow model in Go [1/3]
+- Official Go API
+TensorFlow provides APIs for use in Go programs. These APIs are particularly well-suited to loading models created in Python and executing them within a Go application. 
+
+- Why would you do that?
+It depends on your company support for the golang. Maybe you're a hardcore gopher. 
+
+- Performance (grpc):
+.link https://performance-dot-grpc-testing.appspot.com/explore?dashboard=5652536396611584
+
+* Deploying a trained tensorflow model in Go [2/3]
+- Serving it directly
+	Works for simpler case. Example bababab
+- Serving it through tensor serving 
+	Integrate better 
+
+* Deploying a trained tensorflow model in Go [3/3]
+
