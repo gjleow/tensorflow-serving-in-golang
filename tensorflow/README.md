@@ -30,3 +30,14 @@ go get github.com/tensorflow/tensorflow/tensorflow/go
 ```
 
 [More information](https://www.tensorflow.org/install/install_go)
+
+### Build model and save it
+```
+cd tensorflow/example
+python linear_model.py
+```
+
+### Run pred/infer from model
+```
+go run run_linear.go
+```
