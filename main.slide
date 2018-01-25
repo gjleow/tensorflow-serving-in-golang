@@ -22,6 +22,9 @@ go-jun@go-jek.com
 - Deploying a trained tensorflow model
 - A simple example
 
+Github repo:
+.link https://github.com/gjleow/tensorflow-serving-in-golang
+
 * What is tensorflow?
 Open source library for numerical computation using data flow graphs, written in C++.
 Nodes represent mathematical operations, while graph edges represent multidimensional data arrays (tensors) communicated between them.
