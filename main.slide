@@ -56,4 +56,10 @@ It depends on your company support for the golang. Maybe you're a hardcore gophe
 TensorFlow saves variables in binary checkpoint files that, roughly speaking, map variable names to tensor values.
 
 * Deploying a trained tensorflow model in Go [3/3]
-- Serving it through tensor serving 
+- Serving it through tensorflow serving
+TensorFlow Serving is a flexible, high-performance serving system for machine learning models, runs a gRPC for serving the models.
+
+Make a gRCP call to get the prediction. 
+
+- Why consider golang then?
+An example use case is to fetch meta data/feature before prediction or multiple tensorflow serving. 
