@@ -17,7 +17,7 @@ func main() {
 	}
 	defer model.Session.Close()
 
-	inputTensor, err := tf.NewTensor([][]float32{[]float32{x}})
+	inputTensor, err := tf.NewTensor([]float32{x})
 	if err != nil {
 		fmt.Printf("Error creating input tensor: %s\n", err.Error())
 		return

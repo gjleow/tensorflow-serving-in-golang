@@ -28,7 +28,9 @@ init = tf.global_variables_initializer()
 
 init = tf.global_variables_initializer()
 sess = tf.Session()
-sess.run(init) # reset values to wrong
+
+# Train
+sess.run(init) 
 for i in range(1000):
   sess.run(train, {X: x_train, Y: y_train})
 
