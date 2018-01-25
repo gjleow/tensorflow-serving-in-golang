@@ -11,5 +11,5 @@ run on the root folder
 present
 ```
 
-Code examples in tensorflow folder.
+Code examples in tensorflow folder.  
 Read README.md for instructions to set up local env.
