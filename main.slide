@@ -51,6 +51,9 @@ It depends on your company support for the golang. Maybe you're a hardcore gophe
 	Naming!
 		- Label the input tensor
 		- Label the infer/pred operation
-		- Tag model 
+		- Tag model
 
+TensorFlow saves variables in binary checkpoint files that, roughly speaking, map variable names to tensor values.
+
+* Deploying a trained tensorflow model in Go [3/3]
 - Serving it through tensor serving 
