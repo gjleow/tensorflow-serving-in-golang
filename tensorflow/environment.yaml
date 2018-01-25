@@ -1,0 +1,7 @@
+name: tensorflow
+dependencies:
+- python=3.6.2
+- pip
+- pip:
+    - tensorflow
+
